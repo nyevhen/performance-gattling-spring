@@ -8,7 +8,7 @@ public class HelloController {
 
     class Greeting {
         public String getGreeting() {
-            return "Greetings from local host!";
+            return "Greetings from Spring Boot!";
         }
     }
 

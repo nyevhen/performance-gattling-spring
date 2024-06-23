@@ -24,8 +24,8 @@ class LoadTest extends Simulation {
   setUp(myScenario.inject(
     incrementUsersPerSec(20)
       .times(5)
-      .eachLevelLasting(5 seconds)
-      .separatedByRampsLasting(5 seconds)
+      .eachLevelLasting(5)
+      .separatedByRampsLasting(5)
       .startingFrom(20)
   )).protocols(httpProtocol)
     .assertions(global.successfulRequests.percent.is(100))
